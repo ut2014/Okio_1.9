@@ -1,0 +1,8 @@
+具体使用
+对Okio库的整体框架有了基本了解，那么就该实际操作了。
+具体步骤如下：
+       1.调用Okio类的静态方法获取Source(Sink)
+       2.调用Okio类库的静态方法，通过刚才获取的Source(Sink)获取BufferedSource（BufferedSink）
+       3.对缓冲区根据实际需求做相应操作
+       4.若是Sink，须将调用flush()
+       5.最后close掉，避免内存泄漏
